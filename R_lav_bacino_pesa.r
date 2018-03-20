@@ -8,9 +8,11 @@ library(doBy)
 library(igraph)
 library(DiagrammeR)
 
-setwd("/home/alf/Scrivania/lav_vergari_pesa")
+setwd("qgis/rgis")
 
 bacino_pesa=readRDS("bacino_pesa.rds")
+setwd("..")
+
 writeOGR(bacino_pesa, 
          ".", 
          "bacino_pesa", 
@@ -165,25 +167,16 @@ saveRDS(ucs_bacino_pesa_amm_2017_df,"ucs_bacino_pesa_amm_2017_df.rds")
 #####################################################################################
 
 
-
-
-names_ucs_agro_df=c("AREA_2007","AREA_2013","AREA_2016")
-
 ucs_bacino_pesa_amm_2017_geo=spTransform(ucs_bacino_pesa_amm_2017,CRS("+init=epsg:4326"))
   
-#####################################################################################
-
-
-
-
-#################################################################################################
+################################################################################################
 class_urb=c(111,112,1121,121,1212,122,1221,131,132,133,141,1411,142)
 
 name_urb=c("Zone residenziali a tessuto continuo",
-            "Zone residenziali a tessuto discontinuo",
-            "Pertinenza abitativa, edificato sparso",
-            "Aree industriali, commerciali e servizi pubblici e privati",
-            "Impianto fotovoltaico", 
+           "Zone residenziali a tessuto discontinuo",
+           "Pertinenza abitativa, edificato sparso",
+           "Aree industriali, commerciali e servizi pubblici e privati",
+           "Impianto fotovoltaico", 
             "Reti stradali, ferroviarie ed infrastrutture tecniche",
             "Strade in aree boscate",
             "Aree estrattive", 
@@ -197,7 +190,7 @@ name_urb=c("Zone residenziali a tessuto continuo",
 
 class_agro=c(210,2101,2102,221,222,2221,223,231,241,242,243,244,311,312,313,321,324,332,333,411,511,512)
 
-name_agro=c("Seminativi","Serre","Vivai","Vigneti","Frutteti","Arboricoltura","Oliveti"
+      name_agro=c("Seminativi","Serre","Vivai","Vigneti","Frutteti","Arboricoltura","Oliveti"
                   ,"Prati","Colture temporanee associate a colture permanenti"
                   ,"Sistemi particellari complessi"
                   ,"Colture agrarie con presenza di spazi naturali importanti"
@@ -234,10 +227,6 @@ name_class=c("Zone urbane",
 
 
 ###################################################################################################################################################################################
-
-
-
-
 ucs_bacino_pesa_amm_2017_geo$names=NA
 for ( i in 1:length(class_ucs)) {ucs_bacino_pesa_amm_2017_geo$names[grep(paste0("^",class_ucs[i]),ucs_bacino_pesa_amm_2017_geo$UCS2016)]=name_class[i];
                                 }
@@ -461,7 +450,7 @@ ucs_bacino_pesa_amm_2017_geo$l_2007=NA
 for ( i in 1:length(class_ucs)) {ucs_bacino_pesa_amm_2017_geo$l_2016[grep(paste0("^",class_ucs[i]),ucs_bacino_pesa_amm_2017_geo$UCS2016)]=name_class[i];}
 for ( i in 1:length(class_ucs)) {ucs_bacino_pesa_amm_2017_geo$l_2007[grep(paste0("^",class_ucs[i]),ucs_bacino_pesa_amm_2017_geo$UCS2007)]=name_class[i];}
 
-setwd("uso_suolo_bacino_pesa/qgis")
+
 ucs_bac_pesa_2007map=ucs_bacino_pesa_amm_2017_geo[,21]
 ucs_bac_pesa_2016map=ucs_bacino_pesa_amm_2017_geo[,20]
 ucs_bac_pesa_v07_16=ucs_bacino_pesa_amm_2017_geo[,18]
@@ -469,6 +458,6 @@ ucs_bac_pesa_v07_16=ucs_bacino_pesa_amm_2017_geo[,18]
 writeOGR(ucs_bac_pesa_2007map, ".", "ucs_bac_pesa_2007map", driver="ESRI Shapefile",overwrite_layer = T)
 writeOGR(ucs_bac_pesa_2016map, ".", "ucs_bac_pesa_2016map", driver="ESRI Shapefile",overwrite_layer = T)
 writeOGR(ucs_bac_pesa_v07_16, ".", "ucs_bac_pesa_v07_16", driver="ESRI Shapefile",overwrite_layer = T)
-ucs_bacino_pesa_amm_2017_df=readRDS("ucs_bacino_pesa_amm_2017_df.rds")
+ucs_bacino_pesa_amm_2017_df=readRDS("rqgis/ucs_bacino_pesa_amm_2017_df.rds")
 
 XLConnect::writeWorksheetToFile("ucs_finale_pesa.xls",data.frame(ucs_bacino_pesa_amm_2017_df[,c("AREA_METER","NOME","PROVINCIA","COD_ISTAT")],ucs_bacino_pesa_amm_2017_geo@data),"bacino pesa")
