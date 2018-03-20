@@ -16,10 +16,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>1220892.62872360134497285</xmin>
-      <ymin>5382289.40598366037011147</ymin>
-      <xmax>1275662.67051551723852754</xmax>
-      <ymax>5427202.48534760251641273</ymax>
+      <xmin>1212002.40851669665426016</xmin>
+      <ymin>5374012.32134693302214146</ymin>
+      <xmax>1261985.2414258373901248</xmax>
+      <ymax>5418912.63505695946514606</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -319,6 +319,12 @@
       <blendMode>0</blendMode>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>11.01420169447885833</xmin>
+        <ymin>43.47171447945398626</ymin>
+        <xmax>11.44182400634430152</xmax>
+        <ymax>43.74984681260162489</ymax>
+      </extent>
       <id>ucs_bac_pesa_2016map20180313212921944</id>
       <datasource>./ucs_bac_pesa_2016map.shp</datasource>
       <keywordList>
@@ -756,7 +762,7 @@
         <property key="labeling/yOffset" value="0"/>
         <property key="labeling/zIndex" value="0"/>
         <property key="qgis2web/Visible" value="true"/>
-        <property key="qgis2web/popup/l_2016" value="header label"/>
+        <property key="qgis2web/popup/l_2016" value="inline label"/>
         <property key="variableNames"/>
         <property key="variableValues"/>
       </customproperties>
@@ -897,33 +903,31 @@ def my_form_open(dialog, layer, feature):
       <LayerSnappingToleranceList type="QStringList"/>
     </Digitizing>
     <qgis2web>
-      <Maxzoomlevel type="QString">18</Maxzoomlevel>
-      <Min type="QString">9223-37-20</Min>
-      <Showpopupsonhover type="bool">false</Showpopupsonhover>
+      <Maxzoomlevel type="QString">17</Maxzoomlevel>
+      <Showpopupsonhover type="bool">true</Showpopupsonhover>
       <Basemaps type="QString">OSM</Basemaps>
       <Exportfolder type="QString">/home/alf/Scrivania/lav_vergari_pesa</Exportfolder>
       <mapFormat type="QString">leaflet</mapFormat>
-      <Precision type="QString">maintain</Precision>
+      <Precision type="QString">5</Precision>
       <Measuretool type="QString">Metric</Measuretool>
       <Usedebuglibraries type="bool">false</Usedebuglibraries>
       <Baselayer type="QStringList">
         <value>OSM</value>
       </Baselayer>
       <Addlayerslist type="QString">Expanded</Addlayerslist>
-      <Highlightonhover type="bool">false</Highlightonhover>
       <MatchprojectCRS type="bool">false</MatchprojectCRS>
+      <Highlightonhover type="bool">false</Highlightonhover>
       <Addaddresssearch type="bool">true</Addaddresssearch>
-      <Minzoomlevel type="QString">10</Minzoomlevel>
-      <Geolocateuser type="bool">true</Geolocateuser>
+      <Minzoomlevel type="QString">12</Minzoomlevel>
+      <Geolocateuser type="bool">false</Geolocateuser>
       <Exporter type="QString">folder</Exporter>
       <MinifyGeoJSONfiles type="bool">true</MinifyGeoJSONfiles>
       <Extent type="QString">Canvas extent</Extent>
       <Restricttoextent type="bool">true</Restricttoextent>
       <Template type="QString">full-screen</Template>
-      <Mappinglibrarylocation type="QString">Local</Mappinglibrarylocation>
+      <Mappinglibrarylocation type="QString">CDN</Mappinglibrarylocation>
       <Searchlayer type="QString"></Searchlayer>
       <Layersearch type="QString">None</Layersearch>
-      <Max type="QString">0--</Max>
     </qgis2web>
     <PositionPrecision>
       <DecimalPlaces type="int">2</DecimalPlaces>
