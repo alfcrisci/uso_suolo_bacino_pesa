@@ -140,7 +140,7 @@
       <customproperties/>
     </Composition>
   </Composer>
-  <Composer title="uso_suolo" visible="1">
+  <Composer title="uso_suolo" visible="0">
     <Composition resizeToContentsMarginLeft="0" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" worldFileMap="{71b21e83-a76e-456e-bfc2-79f9797b9fe6}" alignmentSnap="1" printResolution="300" paperWidth="297" gridVisible="0" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="5" printAsRaster="0" generateWorldFile="0" paperHeight="210" numPages="1" snapGridResolution="10" resizeToContentsMarginBottom="0">
       <symbol alpha="1" clip_to_extent="1" type="fill" name="">
         <layer pass="0" class="SimpleFill" locked="0">
@@ -175,14 +175,14 @@
             <styleFont description="Ubuntu,12,-1,5,50,0,0,0,0,0" style=""/>
           </style>
         </styles>
-        <ComposerItem pagey="13" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="153.449" y="13" visibility="1" zValue="2" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="75.7547" outlineWidth="0.3" excludeFromExports="0" uuid="{f67deba9-8836-41a9-b4a1-26d210ba9fc3}" height="116.5" itemRotation="0" frame="false" pagex="153.449">
+        <ComposerItem pagey="9.96141" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="178.13" y="9.96141" visibility="1" zValue="2" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="75.7547" outlineWidth="0.3" excludeFromExports="0" uuid="{f67deba9-8836-41a9-b4a1-26d210ba9fc3}" height="116.5" itemRotation="0" frame="false" pagex="178.13">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
         </ComposerItem>
       </ComposerLegend>
       <ComposerMap followPreset="false" mapRotation="0" keepLayerSet="false" followPresetName="" id="0" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="5381410.75747602991759777" xmin="1221538.63077748077921569" ymax="5427097.23210988286882639" xmax="1276308.67256939667277038"/>
+        <Extent ymin="5381410.75747602991759777" xmin="1221538.63077748077921569" ymax="5427097.15218150522559881" xmax="1276308.67256939667277038"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{0cdf22fd-b897-4fe3-a95f-6eea6dd44a3a}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Reticolo 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -910,8 +910,8 @@ def my_form_open(dialog, layer, feature):
         <value>OSM</value>
       </Baselayer>
       <Addlayerslist type="QString">Expanded</Addlayerslist>
-      <MatchprojectCRS type="bool">false</MatchprojectCRS>
       <Highlightonhover type="bool">false</Highlightonhover>
+      <MatchprojectCRS type="bool">false</MatchprojectCRS>
       <Addaddresssearch type="bool">true</Addaddresssearch>
       <Minzoomlevel type="QString">10</Minzoomlevel>
       <Geolocateuser type="bool">true</Geolocateuser>
