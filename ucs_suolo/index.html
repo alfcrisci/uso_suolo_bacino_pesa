@@ -6,7 +6,7 @@
         <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-capable" content="yes">
-        <link rel="stylesheet" href="http://unpkg.com/leaflet@1.0.3/dist/leaflet.css"><link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"><link rel="stylesheet" href="css/L.Control.Locate.min.css">
+        <link rel="stylesheet" href="css/leaflet.css"><link rel="stylesheet" href="css/font-awesome.min.css"><link rel="stylesheet" href="css/L.Control.Locate.min.css">
         <link rel="stylesheet" href="css/qgis2web.css">
         <link rel="stylesheet" href="css/Control.OSMGeocoder.css">
         <link rel="stylesheet" href="css/leaflet-measure.css">
@@ -24,7 +24,7 @@
         <div id="map">
         </div>
         <script src="js/qgis2web_expressions.js"></script>
-        <script src="http://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script><script src="js/L.Control.Locate.min.js"></script>
+        <script src="js/leaflet.js"></script><script src="js/L.Control.Locate.min.js"></script>
         <script src="js/leaflet.rotatedMarker.js"></script>
         <script src="js/leaflet.pattern.js"></script>
         <script src="js/leaflet-hash.js"></script>
@@ -56,7 +56,7 @@
         measureControl.addTo(map);
         var bounds_group = new L.featureGroup([]);
         var basemap0 = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+            attribution: 'Accademia dei Georgofili, IBIMET CNR, Consorzio di Bonifica Medio Valdarno &copy;<a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
             maxZoom: 18
         });
         basemap0.addTo(map);
@@ -241,7 +241,7 @@
         });
         osmGeocoder.addTo(map);
         var baseMaps = {};
-        L.control.layers(baseMaps,{'Pesa USO E COPERTURA SUOLO 2016<br /><table><tr><td style="text-align: center;"><img src="legend/PesaUSOECOPERTURASUOLO2016_0_ZoneAGReterogenee0.png" /></td><td>Zone_AGR_eterogenee</td></tr><tr><td style="text-align: center;"><img src="legend/PesaUSOECOPERTURASUOLO2016_0_Zoneurbane1.png" /></td><td>Zone urbane</td></tr><tr><td style="text-align: center;"><img src="legend/PesaUSOECOPERTURASUOLO2016_0_Zoneumide2.png" /></td><td>Zone umide</td></tr><tr><td style="text-align: center;"><img src="legend/PesaUSOECOPERTURASUOLO2016_0_Vigneti3.png" /></td><td>Vigneti</td></tr><tr><td style="text-align: center;"><img src="legend/PesaUSOECOPERTURASUOLO2016_0_Vegetazionerada4.png" /></td><td>Vegetazione_rada</td></tr><tr><td style="text-align: center;"><img src="legend/PesaUSOECOPERTURASUOLO2016_0_Seminativi5.png" /></td><td>Seminativi</td></tr><tr><td style="text-align: center;"><img src="legend/PesaUSOECOPERTURASUOLO2016_0_Prati6.png" /></td><td>Prati</td></tr><tr><td style="text-align: center;"><img src="legend/PesaUSOECOPERTURASUOLO2016_0_Oliveti7.png" /></td><td>Oliveti</td></tr><tr><td style="text-align: center;"><img src="legend/PesaUSOECOPERTURASUOLO2016_0_Frutteti8.png" /></td><td>Frutteti</td></tr><tr><td style="text-align: center;"><img src="legend/PesaUSOECOPERTURASUOLO2016_0_Corpiidrici9.png" /></td><td>Corpi_idrici</td></tr><tr><td style="text-align: center;"><img src="legend/PesaUSOECOPERTURASUOLO2016_0_Cantieri10.png" /></td><td>Cantieri</td></tr><tr><td style="text-align: center;"><img src="legend/PesaUSOECOPERTURASUOLO2016_0_Boschi11.png" /></td><td>Boschi</td></tr><tr><td style="text-align: center;"><img src="legend/PesaUSOECOPERTURASUOLO2016_0_Areeurbaneverdi12.png" /></td><td>Aree urbane verdi</td></tr><tr><td style="text-align: center;"><img src="legend/PesaUSOECOPERTURASUOLO2016_0_Areeindustrialiocommerciali13.png" /></td><td>Aree industriali o commerciali</td></tr><tr><td style="text-align: center;"><img src="legend/PesaUSOECOPERTURASUOLO2016_0_Arbustierbacee14.png" /></td><td>Arbusti_erbacee</td></tr></table>': layer_PesaUSOECOPERTURASUOLO2016_0,},{collapsed:false}).addTo(map);
+        L.control.layers(baseMaps,{'Pesa USO E COPERTURA SUOLO 2016<br /><table><tr><td style="text-align: center;"><img src="legend/PesaUSOECOPERTURASUOLO2016_0_ZoneAGReterogenee0.png" /></td><td>Zone_Agricole_eterogenee</td></tr><tr><td style="text-align: center;"><img src="legend/PesaUSOECOPERTURASUOLO2016_0_Zoneurbane1.png" /></td><td>Zone urbane</td></tr><tr><td style="text-align: center;"><img src="legend/PesaUSOECOPERTURASUOLO2016_0_Zoneumide2.png" /></td><td>Zone umide</td></tr><tr><td style="text-align: center;"><img src="legend/PesaUSOECOPERTURASUOLO2016_0_Vigneti3.png" /></td><td>Vigneti</td></tr><tr><td style="text-align: center;"><img src="legend/PesaUSOECOPERTURASUOLO2016_0_Vegetazionerada4.png" /></td><td>Vegetazione_rada</td></tr><tr><td style="text-align: center;"><img src="legend/PesaUSOECOPERTURASUOLO2016_0_Seminativi5.png" /></td><td>Seminativi</td></tr><tr><td style="text-align: center;"><img src="legend/PesaUSOECOPERTURASUOLO2016_0_Prati6.png" /></td><td>Prati</td></tr><tr><td style="text-align: center;"><img src="legend/PesaUSOECOPERTURASUOLO2016_0_Oliveti7.png" /></td><td>Oliveti</td></tr><tr><td style="text-align: center;"><img src="legend/PesaUSOECOPERTURASUOLO2016_0_Frutteti8.png" /></td><td>Frutteti</td></tr><tr><td style="text-align: center;"><img src="legend/PesaUSOECOPERTURASUOLO2016_0_Corpiidrici9.png" /></td><td>Corpi_idrici</td></tr><tr><td style="text-align: center;"><img src="legend/PesaUSOECOPERTURASUOLO2016_0_Cantieri10.png" /></td><td>Cantieri</td></tr><tr><td style="text-align: center;"><img src="legend/PesaUSOECOPERTURASUOLO2016_0_Boschi11.png" /></td><td>Boschi</td></tr><tr><td style="text-align: center;"><img src="legend/PesaUSOECOPERTURASUOLO2016_0_Areeurbaneverdi12.png" /></td><td>Aree urbane verdi</td></tr><tr><td style="text-align: center;"><img src="legend/PesaUSOECOPERTURASUOLO2016_0_Areeindustrialiocommerciali13.png" /></td><td>Aree industriali o commerciali</td></tr><tr><td style="text-align: center;"><img src="legend/PesaUSOECOPERTURASUOLO2016_0_Arbustierbacee14.png" /></td><td>Arbusti_erbacee</td></tr></table>': layer_PesaUSOECOPERTURASUOLO2016_0,},{collapsed:false}).addTo(map);
         setBounds();
         </script>
     </body>
