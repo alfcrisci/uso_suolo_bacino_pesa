@@ -13,10 +13,10 @@
   <mapcanvas>
     <units>degrees</units>
     <extent>
-      <xmin>11.13148117189494712</xmin>
-      <ymin>43.55050214393281749</ymin>
-      <xmax>11.35598288562430724</xmax>
-      <ymax>43.69652161883533381</ymax>
+      <xmin>11.03858698919439085</xmin>
+      <ymin>43.45878528514172956</ymin>
+      <xmax>11.48759041665311109</xmax>
+      <ymax>43.7508242349467622</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>0</projections>
@@ -402,12 +402,12 @@ def my_form_open(dialog, layer, feature):
       <DefaultSnapTolerance type="double">0</DefaultSnapTolerance>
     </Digitizing>
     <qgis2web>
-      <Maxzoomlevel type="QString">18</Maxzoomlevel>
+      <Maxzoomlevel type="QString">19</Maxzoomlevel>
       <Showpopupsonhover type="bool">false</Showpopupsonhover>
       <Basemaps type="QString">OSM</Basemaps>
       <Exportfolder type="QString">/home/alf/Scrivania/lav_vergari_pesa</Exportfolder>
       <mapFormat type="QString">openlayers</mapFormat>
-      <Precision type="QString">maintain</Precision>
+      <Precision type="QString">1</Precision>
       <Measuretool type="QString">Metric</Measuretool>
       <Usedebuglibraries type="bool">false</Usedebuglibraries>
       <Baselayer type="QStringList">
@@ -417,7 +417,7 @@ def my_form_open(dialog, layer, feature):
       <MatchprojectCRS type="bool">false</MatchprojectCRS>
       <Highlightonhover type="bool">false</Highlightonhover>
       <Addaddresssearch type="bool">true</Addaddresssearch>
-      <Minzoomlevel type="QString">11</Minzoomlevel>
+      <Minzoomlevel type="QString">14</Minzoomlevel>
       <Geolocateuser type="bool">true</Geolocateuser>
       <Exporter type="QString">folder</Exporter>
       <MinifyGeoJSONfiles type="bool">true</MinifyGeoJSONfiles>
