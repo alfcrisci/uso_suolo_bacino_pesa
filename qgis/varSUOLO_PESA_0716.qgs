@@ -13,10 +13,10 @@
   <mapcanvas>
     <units>degrees</units>
     <extent>
-      <xmin>11.03858698919439085</xmin>
-      <ymin>43.45878528514172956</ymin>
-      <xmax>11.48759041665311109</xmax>
-      <ymax>43.7508242349467622</ymax>
+      <xmin>10.97778884483996187</xmin>
+      <ymin>43.45982456966061136</ymin>
+      <xmax>11.42679227229868211</xmax>
+      <ymax>43.751863519465644</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>0</projections>
@@ -382,6 +382,7 @@ def my_form_open(dialog, layer, feature):
       <ProjectCRSProj4String type="QString">+proj=longlat +datum=WGS84 +no_defs</ProjectCRSProj4String>
       <ProjectCrs type="QString">EPSG:4326</ProjectCrs>
       <ProjectCRSID type="int">3452</ProjectCRSID>
+      <ProjectionsEnabled type="int">0</ProjectionsEnabled>
     </SpatialRefSys>
     <Paths>
       <Absolute type="bool">false</Absolute>
@@ -402,12 +403,12 @@ def my_form_open(dialog, layer, feature):
       <DefaultSnapTolerance type="double">0</DefaultSnapTolerance>
     </Digitizing>
     <qgis2web>
-      <Maxzoomlevel type="QString">19</Maxzoomlevel>
+      <Maxzoomlevel type="QString">18</Maxzoomlevel>
       <Showpopupsonhover type="bool">false</Showpopupsonhover>
       <Basemaps type="QString">OSM</Basemaps>
       <Exportfolder type="QString">/home/alf/Scrivania/lav_vergari_pesa</Exportfolder>
-      <mapFormat type="QString">openlayers</mapFormat>
-      <Precision type="QString">1</Precision>
+      <mapFormat type="QString">leaflet</mapFormat>
+      <Precision type="QString">5</Precision>
       <Measuretool type="QString">Metric</Measuretool>
       <Usedebuglibraries type="bool">false</Usedebuglibraries>
       <Baselayer type="QStringList">
@@ -417,7 +418,7 @@ def my_form_open(dialog, layer, feature):
       <MatchprojectCRS type="bool">false</MatchprojectCRS>
       <Highlightonhover type="bool">false</Highlightonhover>
       <Addaddresssearch type="bool">true</Addaddresssearch>
-      <Minzoomlevel type="QString">14</Minzoomlevel>
+      <Minzoomlevel type="QString">12</Minzoomlevel>
       <Geolocateuser type="bool">true</Geolocateuser>
       <Exporter type="QString">folder</Exporter>
       <MinifyGeoJSONfiles type="bool">true</MinifyGeoJSONfiles>

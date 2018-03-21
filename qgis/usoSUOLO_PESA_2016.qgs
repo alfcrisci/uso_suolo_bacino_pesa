@@ -907,7 +907,7 @@ def my_form_open(dialog, layer, feature):
       <Showpopupsonhover type="bool">true</Showpopupsonhover>
       <Basemaps type="QString">OSM</Basemaps>
       <Exportfolder type="QString">/home/alf/Scrivania/lav_vergari_pesa</Exportfolder>
-      <mapFormat type="QString">openlayers</mapFormat>
+      <mapFormat type="QString">leaflet</mapFormat>
       <Precision type="QString">5</Precision>
       <Measuretool type="QString">Metric</Measuretool>
       <Usedebuglibraries type="bool">false</Usedebuglibraries>
@@ -918,12 +918,12 @@ def my_form_open(dialog, layer, feature):
       <MatchprojectCRS type="bool">false</MatchprojectCRS>
       <Highlightonhover type="bool">false</Highlightonhover>
       <Addaddresssearch type="bool">true</Addaddresssearch>
-      <Minzoomlevel type="QString">14</Minzoomlevel>
+      <Minzoomlevel type="QString">11</Minzoomlevel>
       <Geolocateuser type="bool">true</Geolocateuser>
       <Exporter type="QString">folder</Exporter>
       <MinifyGeoJSONfiles type="bool">true</MinifyGeoJSONfiles>
       <Extent type="QString">Canvas extent</Extent>
-      <Restricttoextent type="bool">true</Restricttoextent>
+      <Restricttoextent type="bool">false</Restricttoextent>
       <Template type="QString">full-screen</Template>
       <Mappinglibrarylocation type="QString">CDN</Mappinglibrarylocation>
       <Searchlayer type="QString"></Searchlayer>
